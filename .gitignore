@@ -216,3 +216,24 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# Project-specific
+.env
+*.duckdb
+*.duckdb.wal
+*.sqlite
+*.sqlite3
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE-specific
+.vscode/settings.json
+.idea/
+
+# Local secrets / credentials
+secrets/
+credentials/
+
