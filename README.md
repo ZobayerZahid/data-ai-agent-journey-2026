@@ -1,43 +1,41 @@
-# Data + AI + Agentic AI Engineer Journey
+# data-ai-agent-journey-2026
 
-**Starting:** May 11, 2026
-**Deadline:** December 31, 2026
-**Commitment:** 18.5 hrs/week
+**July 11 → December 31, 2026. 25 weeks. Public.**
 
-## The Goal
+I'm a BI/ETL developer (4 years, currently at Charter Communications) with a finance background
+(MBA Finance, 2 years at Citigroup equities operations). By December 31, 2026 I will be a
+**Data + AI + Agentic AI Engineer** — certified, with shipped production-shaped systems to prove it.
 
-Become a hireable Data + AI + Agentic AI Engineer in 33 weeks, starting from a 
-Data Analyst background (SQL + some Python).
+## The three goals
 
-## The Path
+1. **Data + AI + Agentic AI role** — 3 crossover projects + a finance-domain capstone,
+   Anthropic CCA-F + AWS AIF-C01 + AWS DEA-C01 certifications
+2. **Strong Python and SQL** — typed, async, Pydantic-first Python; SQL from BI-level to engineering depth
+3. **Strong Data Structures & Algorithms** — 200+ problems, timed mocks, FAANG screen bar
 
-- **Pillar 1:** Data Engineering (Dagster, dbt, Snowflake, streaming)
-- **Pillar 2:** AI Engineering (LLM APIs, RAG, structured outputs, evaluation)
-- **Pillar 3:** Agentic AI (Claude Agent SDK, MCP, multi-agent, computer use)
+## The map
 
-## Credentials Targeted
+| Phase | Weeks | Ships |
+|---|---|---|
+| 1 · Foundations Sprint | 1–5 | Project 1: LLM-powered data enrichment pipeline |
+| 2 · RAG as a Data Pipeline | 6–10 | Project 2: production-grade RAG with measured evals |
+| 3 · Agents + CCA-F | 11–16 | Project 3: multi-agent system + my own MCP server · CCA-F cert |
+| 4 · Production + AIF-C01 | 17–20 | AWS deployment · AIF-C01 cert · capstone scaffold |
+| 5 · Capstone + DEA-C01 | 21–25 | Finance capstone v1.0 · DEA-C01 cert · applications |
 
-- AWS Certified AI Practitioner (AIF-C01) — Nov 10, 2026
-- AWS Certified Data Engineer Associate (DEA-C01) — Dec 28, 2026
-- Anthropic Academy — full catalog by Dec 31, 2026
+Running threads: DS&A (~8 hrs/wk) · SQL depth (weekly slot) · system design (DDIA + architecture docs) ·
+build in public (weekly posts).
 
-## Progress
+## Structure
 
-- [ ] **Month 1 (May 11 – Jun 10):** Foundations + Project 1
-- [ ] **Month 2 (Jun 11 – Jul 10):** Pipelines + structured extraction
-- [ ] **Month 3 (Jul 11 – Aug 10):** RAG mastery
-- [ ] **Month 4 (Aug 11 – Sep 10):** Agents Part 1 — single-agent mastery
-- [ ] **Month 5 (Sep 11 – Oct 10):** Agents Part 2 — MCP + computer use
-- [ ] **Month 6 (Oct 11 – Nov 10):** Production + AWS AI Practitioner cert
-- [ ] **Month 7 (Nov 11 – Dec 10):** Capstone + DEA cert prep
-- [ ] **Month 8 (Dec 11 – Dec 31):** Ship + apply + DEA cert
+```
+week_01/   ← each week gets a folder: code, notes, what shipped
+dsa/       ← solutions + review log
+docs/      ← architecture docs (1 page per shipped system, trade-offs included)
+```
 
-## Self-Checks
+## Why public
 
-- [ ] Month 2 self-check: July 10, 2026
-- [ ] Month 4 self-check: September 10, 2026
-- [ ] Month 6 self-check: November 10, 2026
+Because the trail is the resume. Follow along — or better, hold me to it.
 
-## Public Trail
-
-Building in public. Follow along on LinkedIn (and Substack/dev.to once set up).
+*Day 1: July 11, 2026.*
