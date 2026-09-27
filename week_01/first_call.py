@@ -13,7 +13,7 @@ Every concept here comes back in Project 1:
 """
 
 import os
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 import duckdb
 from anthropic import Anthropic
@@ -23,7 +23,9 @@ from dotenv import load_dotenv
 load_dotenv()  # reads ANTHROPIC_API_KEY from .env (never hardcode keys)
 
 if not os.environ.get("ANTHROPIC_API_KEY"):
-    raise SystemExit("Missing ANTHROPIC_API_KEY — create a .env file first (see runbook Block 2).")
+    raise SystemExit(
+        "Missing ANTHROPIC_API_KEY — create a .env file first (see runbook Block 2)."
+    )
 
 client = Anthropic()
 
@@ -80,10 +82,12 @@ cost = (
 
 con.execute(
     "INSERT INTO api_calls VALUES (?, ?, ?, ?, ?, ?)",
-    [datetime.now(timezone.utc), MODEL, prompt, usage.input_tokens, usage.output_tokens, cost],
+    [datetime.now(UTC), MODEL, prompt, usage.input_tokens, usage.output_tokens, cost],
 )
 
-print(f"tokens in/out: {usage.input_tokens}/{usage.output_tokens}   est. cost: ${cost:.6f}")
+print(
+    f"tokens in/out: {usage.input_tokens}/{usage.output_tokens}   est. cost: ${cost:.6f}"
+)
 
 # --- prove the data layer works: query your own usage with SQL ---------
 print("\nAll calls so far (straight from DuckDB):")
